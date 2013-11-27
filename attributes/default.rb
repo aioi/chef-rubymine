@@ -20,5 +20,5 @@
 default['rubymine']['version']  = '5.0'
 default['rubymine']['checksum'] = 'ae3d997fcb79d7d5f462d71dfb675485'
 default['rubymine']['base_url'] = 'http://download.jetbrains.com/ruby'
-default['rubymine']['user']     = 'obrisse'
+default['rubymine']['user']     = node['current_user']
 default['rubymine']['max_user_watches'] = 524288

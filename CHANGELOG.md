@@ -2,11 +2,11 @@
 
 This file is used to list changes made in each version of andia-rubymine.
 
+## 0.1.1:
+
+* Fix bug related to current_user (root when using rvmsudo)
+
 ## 0.1.0:
 
 * Initial release of andia-rubymine
 
-- - -
-Check the [Markdown Syntax Guide](http://daringfireball.net/projects/markdown/syntax) for help with Markdown.
-
-The [Github Flavored Markdown page](http://github.github.com/github-flavored-markdown/) describes the differences between markdown on github and standard markdown.

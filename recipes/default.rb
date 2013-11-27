@@ -24,7 +24,7 @@ include_recipe 'java'
 
 basename = "RubyMine-#{node['rubymine']['version']}"
 rubymine_url = "#{node['rubymine']['base_url']}/#{basename}.tar.gz"
-user = node['current_user']
+user = node['rubymine']['user'] || node['current_user']
 
 # Download the tarball
 remote_file "#{Chef::Config[:file_cache_path]}/#{basename}.tar.gz" do
@@ -38,15 +38,15 @@ end
 
 # Create the Applications directory
 directory "/home/#{user}/Applications" do
-  owner node['rubymine']['user']
-  group node['rubymine']['user']
+  owner user
+  group user
   mode '0755'
 end
 
 # Install rubymine
 bash 'Install rubymine' do
-  user node['rubymine']['user']
-  group node['rubymine']['user']
+  user user
+  group user
   cwd "/home/#{user}/Applications"
   code "tar -zxf #{Chef::Config[:file_cache_path]}/#{basename}.tar.gz"
   not_if "test -d /home/#{user}/Applications/#{basename}"
