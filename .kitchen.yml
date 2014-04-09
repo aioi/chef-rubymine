@@ -1,0 +1,24 @@
+---
+driver:
+  name: vagrant
+
+provisioner:
+  name: chef_solo
+
+platforms:
+  - name: ubuntu-12.04
+    driver:
+      box: precise-desktop-amd64
+      vagrantfile_erb: './Vagrantfile.erb'
+      gui: true
+      customize:
+        memory: 1024
+        cpuexecutioncap: 50
+      network:
+        - ["private_network", {ip: "33.33.33.10"}]  
+
+suites:
+  - name: default
+    run_list:
+      - recipe[andia-rubymine::default]
+    attributes:
