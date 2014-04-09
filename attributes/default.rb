@@ -17,8 +17,8 @@
 # limitations under the License.
 #
 
-default['rubymine']['version']  = '5.0'
-default['rubymine']['checksum'] = 'ae3d997fcb79d7d5f462d71dfb675485'
+default['rubymine']['version']  = '6.3'
+default['rubymine']['checksum'] = '7cfce21f1c0cbdf83b9f0e6dbbd1d1f0'
 default['rubymine']['base_url'] = 'http://download.jetbrains.com/ruby'
 default['rubymine']['user']     = node['current_user']
 default['rubymine']['max_user_watches'] = 524288

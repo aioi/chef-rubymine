@@ -10,13 +10,13 @@ depends          'sysctl', '~> 0.3.3'
 
 attribute 'version',
   :display_name => 'Version',
-  :description => 'The Version of Rubymine to install',
-  :default => '5.0'
+  :description => 'RubyMine version to install',
+  :default => '6.3'
 
 attribute 'checksum',
   :display_name => 'Checksum',
-  :description => 'Checksum of the rubymine file',
-  :default => 'ae3d997fcb79d7d5f462d71dfb675485'
+  :description => 'RubyMine archive checksum',
+  :default => '7cfce21f1c0cbdf83b9f0e6dbbd1d1f0'
 
 attribute 'max_user_watches',
   :display_name => 'Max user watches',
