@@ -4,7 +4,7 @@ maintainer_email 'obrisse@aioinissaydowa.com.au'
 license          'All rights reserved'
 description      'Installs/Configures andia-rubymine'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.1.1'
+version          '0.1.2'
 depends          'java'
 depends          'sysctl', '~> 0.3.3'
 
@@ -22,3 +22,7 @@ attribute 'max_user_watches',
   :display_name => 'Max user watches',
   :description => 'Inotify Watches Limit',
   :default => '524288'
+
+attribute 'user',
+  :display_name => 'User',
+  :description => 'The user for which to install Rubymine'
