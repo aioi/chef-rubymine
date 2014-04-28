@@ -1,0 +1,86 @@
+{
+  "name": "rubymine",
+  "description": "Installs/Configures Rubymine",
+  "long_description": "chef-rubymine Cookbook\n=======================\nInstalls RubyMine and necessary packages.\n\nRequirements\n------------\nShould work on any Debian-family Linux distribution.\n\n#### cookbooks\n- `java` - Rubymine requires the Sun Java SDK.\n\nAttributes\n----------\n- `default['rubymine']['version']`  - the version number to install\n- `default['rubymine']['checksum']` - the checksum of the tarball to install\n- `default['rubymine']['user']`     - the user for which to install rubymine\n\nUsage\n-----\nJust include `chef-rubymine` in your node's `run_list`:\n\n```json\n{\n  \"name\":\"my_node\",\n  \"run_list\": [\n    \"recipe[chef-rubymine]\"\n  ]\n}\n```\n\nContributing\n------------\n1. Fork the repository on Github\n2. Create a named feature branch (like `add_component_x`)\n3. Write you change\n4. Write tests for your change (if applicable)\n5. Run the tests, ensuring they all pass\n6. Submit a Pull Request using Github\n\nLicense and Authors\n-------------------\nAuthors: [Olivier Brisse](https://github.com/ouranos)\n\n",
+  "maintainer": "Olivier Brisse",
+  "maintainer_email": "obrisse@aioinissaydowa.com.au",
+  "license": "All rights reserved",
+  "platforms": {
+  },
+  "dependencies": {
+    "java": ">= 0.0.0",
+    "sysctl": "~> 0.3.3"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+    "version": {
+      "display_name": "Version",
+      "description": "RubyMine version to install",
+      "default": "6.3",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional",
+      "recipes": [
+
+      ]
+    },
+    "checksum": {
+      "display_name": "Checksum",
+      "description": "RubyMine archive checksum",
+      "default": "7cfce21f1c0cbdf83b9f0e6dbbd1d1f0",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional",
+      "recipes": [
+
+      ]
+    },
+    "max_user_watches": {
+      "display_name": "Max user watches",
+      "description": "Inotify Watches Limit",
+      "default": "524288",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional",
+      "recipes": [
+
+      ]
+    },
+    "user": {
+      "display_name": "User",
+      "description": "The user for which to install Rubymine",
+      "choice": [
+
+      ],
+      "calculated": false,
+      "type": "string",
+      "required": "optional",
+      "recipes": [
+
+      ]
+    }
+  },
+  "groupings": {
+  },
+  "recipes": {
+  },
+  "version": "0.1.3"
+}

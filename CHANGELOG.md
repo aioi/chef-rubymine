@@ -2,6 +2,10 @@
 
 This file is used to list changes made in each version of andia-rubymine.
 
+## 0.1.3:
+
+* Fix metadata
+
 ## 0.1.2:
 
 * Update to RubyMine 6.3

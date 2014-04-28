@@ -1,10 +1,10 @@
-name             'andia-rubymine'
+name             'rubymine'
 maintainer       'Olivier Brisse'
 maintainer_email 'obrisse@aioinissaydowa.com.au'
 license          'All rights reserved'
-description      'Installs/Configures andia-rubymine'
+description      'Installs/Configures Rubymine'
 long_description IO.read(File.join(File.dirname(__FILE__), 'README.md'))
-version          '0.1.2'
+version          '0.1.3'
 depends          'java'
 depends          'sysctl', '~> 0.3.3'
 
